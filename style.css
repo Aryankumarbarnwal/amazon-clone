@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+body {
+    background-color: #dadada;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: #131921;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-country {
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+
+.nav-country h1 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    background: #fff;
+    color: gray;
+    border-radius: 4px;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+.nav-search .nav-category {
+    display: flex;
+    background: #e5e5e5;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.nav-search .nav-category img {
+    height: 12px;
+}
+
+.nav-search .search_bar {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.nav-search .search_icon {
+    max-width: 41px;
+    background-color: darkorange;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+}
+
+.country_language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-signin {
+    margin-left: 15px;
+}
+
+.nav-signin p {
+    font-size: 10px;
+}
+
+.nav-signin h1 {
+    font-size: 14px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    padding: 8px 20px;
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.nav-bottom div {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-bottom div p {
+    font-size: 15px;
+    padding: 6px;
+}
+
+.header-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-slider ul {
+    display: flex;
+    width: 100%; /* Ensure the ul is wide enough to contain all images */
+    transition: transform 1s ease;
+    animation: scroll 20s linear infinite;
+}
+
+.header-slider img {
+    min-width: 100%; /* Ensure each image takes full width */
+    height: 400px;
+}
+
+.header-slider button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    padding: 3vh 0.5vw;
+    background-color: #ffffff4f;
+    color: #0000007b;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.header-slider .next {
+    right: 10px;
+}
+
+.header-slider .prev {
+    left: 10px;
+}
+
+.header-slider button:hover {
+    background-color: #131921;
+    color: #fff;
+    padding: 5vh 1vw;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
