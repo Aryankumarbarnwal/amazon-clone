@@ -17,6 +17,10 @@ a {
 }
 
 nav {
+    position: sticky;
+    top:0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
     background: #131921;
@@ -303,4 +307,17 @@ nav {
     color: #be0b3b;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .box-row .box-col {
+        max-width: 48%;
+    }
+    .nav-bottom .content {
+        display: none;
+    }
+    .nav-search .nav-category p {
+        font-size: 12px;
+    }
+}
+
 
